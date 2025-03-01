@@ -1,0 +1,49 @@
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .category-tag {
+    background: #007bff;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    margin: 0 0 1rem;
+    color: #1a1a1a;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .resource-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .resource-link:hover {
+    background-color: #0056b3;
+  }

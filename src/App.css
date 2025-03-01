@@ -1,0 +1,226 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+:root {
+  --primary: #2B4162;       /* Deep navy - authority & trust */
+  --secondary: #4F7CAC;     /* Soft blue - calm & professional */
+  --accent: #C0D6DF;        /* Light sky blue - freshness */
+  --background: #F5F9FC;    /* Off-white background - clean */
+  --text: #3A405A;          /* Dark gray-blue - readability */
+  --highlight: #6B9080;     /* Muted green - natural accent */
+}
+
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.app {
+  padding: 2rem;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+h1 {
+  text-align: center;
+  margin: 2.5rem 0;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 2.75rem;
+  letter-spacing: -0.03em;
+}
+
+/* Filter Menu */
+.filter-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  background: rgba(245, 249, 252, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  box-shadow: 0 2px 15px rgba(43, 65, 98, 0.05);
+}
+
+.filter-menu button {
+  padding: 0.7rem 1.5rem;
+  border: 2px solid var(--accent);
+  border-radius: 30px;
+  background: white;
+  color: var(--secondary);
+  font-weight: 500;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-menu button:hover {
+  background: var(--secondary);
+  color: white;
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.filter-menu button.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 4px 6px rgba(43, 65, 98, 0.1);
+}
+
+/* Cards Grid */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Individual Card */
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(43, 65, 98, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(43, 65, 98, 0.12);
+}
+
+.card-content {
+  padding: 2rem;
+  position: relative;
+}
+
+.category-tag {
+  background: var(--accent);
+  color: var(--primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  color: var(--primary);
+  margin: 0 0 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+p {
+  color: var(--text);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: var(--primary);
+  color: white !important;
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.25s ease;
+}
+
+.resource-link:hover {
+  background: var(--highlight);
+}
+
+/* Scrollbar */
+.cards-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .app {
+    padding: 1.2rem;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+  }
+  
+  .filter-menu {
+    padding: 1rem;
+    margin: -1rem -1rem 2rem;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+}
