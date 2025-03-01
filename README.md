@@ -33,8 +33,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Desktop Video Walkthrough' width='' alt='Desktop Video Walkthrough' />
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Mobile Video Walkthrough' width='' alt='Mobile Video Walkthrough' />
+<img src='https://github.com/tsh594/Project-1-Community-Board/blob/main/videos/Vite%20%2B%20React%20-%20Desktop-walkthrough.gif' title='Desktop Video Walkthrough' width='' alt='Desktop Video Walkthrough' />
+<img src='https://github.com/tsh594/Project-1-Community-Board/blob/main/videos/Vite%20%2B%20React%20-%20Mobile-walkthrough.gif' width='' alt='Mobile Video Walkthrough' />
 
 
 <!-- Replace this with whatever GIF tool you used! -->
